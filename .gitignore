@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.egg-info/
+fit/
+overlay.html
+*.fit
+*.FIT
+*.peach-data
+*.peach-data-index
+*.peachraw
+*.xlsx
+*.parquet
+.env*
+names.txt
+.DS_Store

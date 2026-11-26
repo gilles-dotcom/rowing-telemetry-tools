@@ -1,0 +1,30 @@
+title: "[Show and tell] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing. Please do NOT attach session files, Excel exports, names or GPS tracks.
+        Numbers, plots of your own data and code are welcome.
+  - type: textarea
+    id: built
+    attributes:
+      label: What did you build or try?
+    validations:
+      required: true
+  - type: input
+    id: boat
+    attributes:
+      label: Boat type and sensors (for example 4x, 8+ with one seat missing, 1x with seat sensor)
+  - type: textarea
+    id: worked
+    attributes:
+      label: What worked
+  - type: textarea
+    id: differed
+    attributes:
+      label: What differed from the docs (especially for 4x or other untested setups)
+  - type: input
+    id: link
+    attributes:
+      label: Link (optional)

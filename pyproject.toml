@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rowing-telemetry-tools"
+version = "1.0.0"
+description = "Work with your own Peach rowing data: read, convert to FIT, merge heart rate, compare, check."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["numpy<2", "pandas<2.3", "fit-tool==0.9.15", "fitparse==1.2.0", "requests>=2.31"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+rowtools = "rowtools.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "analysis"]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning:fitparse.*"]
